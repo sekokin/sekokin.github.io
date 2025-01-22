@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sekokin</title>
+    <link>/</link>
+    <description>Recent content on sekokin</description>
+    <generator>Hugo -- 0.141.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Jan 2025 16:45:20 +0800</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Github Page 构建个人 Blog</title>
+      <link>/posts/use-git/</link>
+      <pubDate>Thu, 02 Jan 2025 16:45:20 +0800</pubDate>
+      <guid>/posts/use-git/</guid>
+      <description>&lt;h1 id=&#34;为什么是-github&#34;&gt;为什么是 Github&lt;/h1&gt;
+&lt;p&gt;根据 &lt;a href=&#34;https://laike9m.com/blog/people-die-but-long-live-github,122/&#34;&gt;People Die, but Long Live GitHub&lt;/a&gt; 的文章，虽然示例中的作者已经在多年前去世，但他的内容还是可以继续访问。&lt;/p&gt;
+&lt;p&gt;抛开很多时候大家的 「Github 道德」的情况，Github 目前再肉眼可见的十年内，应该还是会一直作为可持续的内容存储的&lt;/p&gt;
+&lt;h2 id=&#34;为什么是-page&#34;&gt;为什么是 Page&lt;/h2&gt;
+&lt;p&gt;重要的事情说三遍，那就是：&lt;strong&gt;免费，免费，免费&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;采用 Github作为 Blog 的方式，目前看到的有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 Github help 中提供的方式，即: 新建 repo&amp;ndash;&amp;gt;配置 &lt;code&gt;*.github.io&lt;/code&gt; 的地址 &amp;ndash;&amp;gt; 通过各种静态框架写 MD 文件&lt;/li&gt;
+&lt;li&gt;基于 &lt;code&gt;Git Issuse&lt;/code&gt; 的方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果不想用各种主题、配置，不想学习各种内容，回归到本质的内容，那就是选择 &lt;code&gt;Git Issuse&lt;/code&gt;方式。&lt;/p&gt;
+&lt;p&gt;目前因为还能折腾，所以采用第一种， 使用 Hugo +  Github Page&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wsl2中加速Thefuck</title>
+      <link>/posts/wsl2-make-thefuck-faster/</link>
+      <pubDate>Thu, 02 Jan 2025 16:40:41 +0800</pubDate>
+      <guid>/posts/wsl2-make-thefuck-faster/</guid>
+      <description>&lt;p&gt;在 wsl2 中 使用 &lt;code&gt;Thefuck&lt;/code&gt; 的包，会出现明显的缓慢情况，一边输入命令差不多到实际结果约 &lt;code&gt;24s&lt;/code&gt;左右。&lt;/p&gt;
+&lt;p&gt;通过&lt;code&gt;fuck --debug&lt;/code&gt; 命令，查看最后实际调用返回信息：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-consloe&#34; data-lang=&#34;consloe&#34;&gt;DEBUG: Total took: 0:23:47.934972
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这种情况对于加快和提升效率的人而言，延迟是不可接受的。&lt;/p&gt;
+&lt;p&gt;通过 google 搜索 &lt;code&gt;thefuck work slow on wsl2&lt;/code&gt;, 发现前人以前提过的问题：&lt;a href=&#34;https://github.com/nvbn/thefuck/issues/1036&#34;&gt;https://github.com/nvbn/thefuck/issues/1036&lt;/a&gt;，通过阅读后发现最简单的解决方式为：&lt;/p&gt;
+&lt;p&gt;修改 thefuck 安装目录下 &lt;code&gt;const.py&lt;/code&gt; 如下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DEFAULT_SETTINGS &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {excluded_search_path_prefixes&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;: [&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;mnt&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;]}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样修改后，查看最后实际调用返回信息：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-consloe&#34; data-lang=&#34;consloe&#34;&gt;DEBUG: Total took: 0:00:01.335960
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;分析：原因为 执行时候通过环境变量查找，通过屏蔽路径方式排除&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TIL</title>
+      <link>/posts/til/</link>
+      <pubDate>Thu, 02 Jan 2025 10:00:39 +0800</pubDate>
+      <guid>/posts/til/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TIL Means: &lt;code&gt;Today I Learn&lt;/code&gt;. 也就是 &lt;code&gt;今天学到了什么&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;2025-01-02&#34;&gt;2025-01-02&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Windows alias 的用法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Set-Alias -Name np -Value C:\Windows\notepad.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-Alias -Name np
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>&lt;p&gt;This is About Page, May Record Some info.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
