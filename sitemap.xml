@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/</loc>
+    <loc>https://sekokin.github.io/posts/</loc>
     <lastmod>2025-11-17T15:27:42+08:00</lastmod>
   </url><url>
-    <loc>/posts/s2025w47/</loc>
+    <loc>https://sekokin.github.io/posts/s2025w47/</loc>
     <lastmod>2025-11-17T15:27:42+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://sekokin.github.io/</loc>
     <lastmod>2025-11-17T15:27:42+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://sekokin.github.io/tags/</loc>
     <lastmod>2025-11-17T15:27:42+08:00</lastmod>
   </url><url>
-    <loc>/tags/weekly/</loc>
+    <loc>https://sekokin.github.io/tags/weekly/</loc>
     <lastmod>2025-11-17T15:27:42+08:00</lastmod>
   </url><url>
-    <loc>/posts/s2025w09/</loc>
+    <loc>https://sekokin.github.io/posts/s2025w09/</loc>
     <lastmod>2025-02-27T12:15:42+08:00</lastmod>
   </url><url>
-    <loc>/search/</loc>
+    <loc>https://sekokin.github.io/search/</loc>
     <lastmod>2025-01-15T16:54:26+08:00</lastmod>
   </url><url>
-    <loc>/posts/use-git/</loc>
+    <loc>https://sekokin.github.io/posts/use-git/</loc>
     <lastmod>2025-01-02T16:45:20+08:00</lastmod>
   </url><url>
-    <loc>/posts/wsl2-make-thefuck-faster/</loc>
+    <loc>https://sekokin.github.io/posts/wsl2-make-thefuck-faster/</loc>
     <lastmod>2025-01-02T16:40:41+08:00</lastmod>
   </url><url>
-    <loc>/posts/til/</loc>
+    <loc>https://sekokin.github.io/posts/til/</loc>
     <lastmod>2025-01-02T10:00:39+08:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://sekokin.github.io/about/</loc>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>https://sekokin.github.io/archives/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://sekokin.github.io/categories/</loc>
   </url>
 </urlset>
